@@ -68,8 +68,7 @@ Critics (A3C) where each agent relies on the same neural network to tell them wh
 In other words, each thread calls model.predict concurrently.
 
 Here is a diagram of using Keras functional API to build a simple deep learning network.
-
-![Linear Diagram](.images/image2.png)
+![Linear Model](./images/image2.png)
 
 First of all, we must create and define a standalone input layer that specifies the shape of input data. Then we create 
 a hidden layer as a Dense that can receive input only from the input layer. In this way of connecting layers piece by 
