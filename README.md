@@ -46,6 +46,7 @@ The engineers are proving their testing quality all the time. For example ,in th
 with the exception while changing and overwriting the API.
 
 [test.api](https://github.com/keras-team/keras/blob/master/tests/test_api.py)
+(./images/image1.png)
 
 Keras use Travis-CI for Continuous Integration. Travis CI can test on multiple operating systems, Linux and macOS. I also 
 found in their github that skip the CNTK install in some travis jobs to speed up tests. 
@@ -68,7 +69,7 @@ In other words, each thread calls model.predict concurrently.
 
 Here is a diagram of using Keras functional API to build a simple deep learning network.
 
-[Linear Diagram]()
+[Linear Diagram](.images/image2.png)
 
 First of all, we must create and define a standalone input layer that specifies the shape of input data. Then we create 
 a hidden layer as a Dense that can receive input only from the input layer. In this way of connecting layers piece by 
@@ -107,7 +108,7 @@ output = Dense(1, activation='sigmoid')(hidden1)<br>
 model = Model(inputs=visible, outputs=output)<br>
 
 
-[CNN Diagram]()
+[CNN Diagram](./images/image3.png)
 
 ## Issue
 when I try to load weights of shallower layers as initialization for deeper one, it fails.
@@ -163,4 +164,4 @@ that Keras trains slower than Tensorflow. This is a main drawback of Keras. This
  different folders. I process and label the input images and split them into training and testing set using 
  train_test_split function. I built the model using Flatten and Dense function and used AdamOptimizder for 
  fully-connected layers. I successfully get the prediction result and the accuracy is around 80%.
- [Demo Results]()
+ [Demo Results](./images/image4.png)
